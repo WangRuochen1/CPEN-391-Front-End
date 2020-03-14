@@ -1,6 +1,6 @@
-import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from 'react-native';
-
+import React from "react";
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image } from "react-native";
+import cat_icon from "../assets/cat_icon.png";
 //JavaScript function goes here
 export default class LoginScreen extends React.Component {
 
@@ -33,6 +33,13 @@ export default class LoginScreen extends React.Component {
             <View style = {{flexDirection: "column"}}> 
                 <View style = {styles.container}>
                 <Text style = {styles.textSytle}>Please Log In</Text>
+                </View>
+                  
+                <View style = {{flexDirection: "row",justifyContent: "center", marginTop: 40}}>
+                    <Image
+                    style={{width: 60, height: 60}}
+                    source={cat_icon}
+                    />
                 </View>
 
                 <View>
@@ -95,7 +102,7 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
     },
     text1:{
-        paddingTop: 50,
+        paddingTop: 30,
         fontSize: 20,
         paddingLeft: 20,
         textShadowColor: "#F7AF32",
